@@ -1,1 +1,3 @@
 Sample test commit at $(date)
+
+- Added new line.
