@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../src/index.js'; // Ensure your app file exports `app`
+import { app } from '../src/index.js'; 
 
 describe('Express App', () => {
   it('should return 200 OK for the home route', async () => {
