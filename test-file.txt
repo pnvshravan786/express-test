@@ -2,3 +2,4 @@ Sample test commit at $(date)
 
 - Added new line.
 - Added new line 2.
+- Added new line when checkout at gitlab-ci branch
