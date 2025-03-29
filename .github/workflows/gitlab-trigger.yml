@@ -3,7 +3,10 @@ name: Trigger GitLab CI/CD
 on:
   push:
     branches:
-      - main  # Or any branch you want
+        - '**'
+  pull_request: 
+      branches: 
+        - '**'
 
 jobs:
   trigger-gitlab-ci:
