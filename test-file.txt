@@ -6,3 +6,5 @@ Sample test commit at $(date)
 - Added new line incl. pull-request in trigger
 - Added new line to test again.
 - Added new line to test again - i8.
+
+- Added new line to test again - i9.
