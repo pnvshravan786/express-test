@@ -25,3 +25,4 @@ Sample test commit at $(date)
 -- Added new line to test again - i23.
 -- Added new line to test again - i24.
 -- Added new line to test again - i25.
+-- Added new line to test again - i26.
