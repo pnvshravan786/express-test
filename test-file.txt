@@ -31,3 +31,4 @@ Sample test commit at $(date)
 -- Test to trigger local Gitlab-CE instance -i1.
 -- Test to trigger local Gitlab-CE instance -i2.
 -- Test to trigger local Gitlab-CE instance -i3.
+-- Test to trigger local Gitlab-CE instance -i4.
