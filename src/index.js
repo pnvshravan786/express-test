@@ -20,17 +20,16 @@
 //     console.log(`Express listening on port ${PORT}`);
 // })
 
-import express from "express";
+import express from 'express';
 
 const app = express();
 
-const PORT = process.env.PORT || 3000; // Ensure it uses 3000
-app.get("/", (req, res) => {
-    res.send("Server is running!");
+app.get('/', (req, res) => {
+  res.send('Server is running!');
 });
 
-app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Express listening on port ${PORT}`);
+const server = app.listen(3000, () => {
+  console.log('Server is running on port 3000');
 });
 
-export {app};
+export { app, server };

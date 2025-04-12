@@ -2,3 +2,31 @@ Sample test commit at $(date)
 
 - Added new line.
 - Added new line 2.
+- Added new line when checkout at gitlab-ci branch.
+- Added new line incl. pull-request in trigger
+- Added new line to test again.
+- Added new line to test again - i8.
+
+- Added new line to test again - i9.
+- Added new line to test again -i10.
+- Added new line to test again - i11.
+- Added new line to test again - i12.
+- Added new line to test again - i13.
+- Added new line to test again - i14.
+- Added new line to test again - i15.
+
+- Added new line to test again - i16.
+- Added new line to test again - i17.
+- Added new line to test again - i18.
+- Added new line to test again - i19.
+- Added new line to test again - i20.
+- Added new line to test again - i21.
+- Added new line to test again - i22.
+-- Added new line to test again - i23.
+-- Added new line to test again - i24.
+-- Added new line to test again - i25.
+-- Added new line to test again - i26.
+-- Added new line to test again - i27.
+
+-- Test to trigger local Gitlab-CE instance -i1.
+-- Test to trigger local Gitlab-CE instance -i2.
