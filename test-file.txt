@@ -29,3 +29,4 @@ Sample test commit at $(date)
 -- Added new line to test again - i27.
 
 -- Test to trigger local Gitlab-CE instance -i1.
+-- Test to trigger local Gitlab-CE instance -i2.
