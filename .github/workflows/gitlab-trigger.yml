@@ -4,27 +4,27 @@ on:
   push:
     branches:
       - '**'
-  pull_request: 
-    branches: 
+  pull_request:
+    branches:
       - '**'
-
 
 jobs:
   trigger-gitlab-ci:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      
+
       - name: Capture Commit ID
         id: commit
         run: echo "commit_id=$(git rev-parse HEAD)" >> $GITHUB_ENV
-      
-      - name: Trigger GitLab Pipeline
+
+      - name: Trigger GitLab CE Pipeline (via Cloudflare Tunnel)
         run: |
-          curl --request POST "https://gitlab.com/api/v4/projects/${{ secrets.GITLAB_PROJECT_ID }}/trigger/pipeline" \
-          --form "token=${{ secrets.GITLAB_TRIGGER_TOKEN }}" \
-          --form "ref=main" \
-          --form "variables[COMMIT_ID]=${{ env.commit_id }}"
+          curl --request POST "https://nd-drinking-paragraph-were.trycloudflare.com/api/v4/projects/${{ secrets.GITLAB_PROJECT_ID }}/trigger/pipeline" \
+            --form "token=${{ secrets.GITLAB_TRIGGER_TOKEN }}" \
+            --form "ref=main" \
+            --form "variables[COMMIT_ID]=${{ env.commit_id }}"
